@@ -6,14 +6,14 @@
     font-family: 'Hk Grotesk';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
+    src: url('fonts/HKGrotesk-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Jost-Regular.ttf') format('woff');
+    src: url('fonts/Jost-Regular.ttf') format('woff');
 }
 
 * {
@@ -106,7 +106,6 @@ body {
 }
 
 section {
-    padding: var(--gutter-huge) 0;
     border-bottom: var(--border-light);
 }
 
@@ -502,6 +501,10 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Work ----- */
 /* --------------------------------------- */
 
+.work {
+    padding: 40px 0 0 0;
+}
+
 .image {
     position: relative;
   }
@@ -646,6 +649,11 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- About ----- */
 /* --------------------------------------- */
 
+
+.about {
+    padding: 50px 0 100px 0;
+}
+
 .about__content {
     display: flex;
     flex-direction: row-reverse;
@@ -704,6 +712,8 @@ body:not(.user-is-tabbing) a:focus {
     min-width: 100%;
     box-sizing: border-box;
     position: relative;
+    padding: -20px;
+    margin: 0;
     
 }
 
@@ -738,8 +748,6 @@ body:not(.user-is-tabbing) a:focus {
     }   
 
 
-
-
     @media only screen and (max-width: 1024px) {
         .slide{
             margin-top: 5.4vh;
@@ -751,6 +759,11 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
+
+.contact {
+    padding: 60px 0 100px 0;
+}
+
 
 .contact__info {
     max-width: var(--container-medium-width);
@@ -856,4 +869,50 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+
+.outcomes_title h3 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+#outcomes {
+    padding: 12px;
+    display: flex;
+    width: 100%;
+}
+
+#outcomes h3 {
+    text-align: center;
+}
+
+#outcomes .left_outcomes,
+#outcomes .right_outcomes {
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#outcomes .left_outcomes {
+    border-right: 1px solid red;
+}
+
+#outcomes .right_outcomes {
+    border-left: 1px solid red;
+}
+
+#outcomes .placeholder {
+    display: flex;
+}
+
+#outcomes .placeholder p {
+    position: relative;
+    padding: 0 10px 20px 20px;
+}
+
+#outcomes .placeholder img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
 }
